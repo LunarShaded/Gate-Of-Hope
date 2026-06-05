@@ -13,6 +13,7 @@ body{
     justify-content: space-around;
     background: rgb(255, 255, 255);
     padding: 20px 20px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.215);
 }
 
 .logo{
@@ -23,7 +24,7 @@ body{
 
 .logo h2{
     font-weight: 400;
-    font-size: 30px;
+    font-size: 29px;
 }
 
 .logoIcon{
@@ -44,7 +45,7 @@ body{
 .nav ul li a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 19px;
     transition: 0.2s ease;
 }
 
