@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.aboutSection{
+    padding-top:75px;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutSection h1{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.heroContent{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding-top: 75px;
+}
+
+.heroStory{
+    display:flex;  
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+}
+
+.heroStory h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.heroStory ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.heroStory ul li p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.heroGoals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroGoals h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.heroGoals p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.heroVisionWrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.heroMissionWrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.iconGoals{
+    color: green;
+    height: 32px;
+    width: 32px;
+}
+
+.heroVision{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heroMission{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
