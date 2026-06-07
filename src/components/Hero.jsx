@@ -1,5 +1,5 @@
 import styles from './Hero.module.css'
-import img from '/public/img/gateofhope.jpg'
+import img from '/src/img/gateofhope.jpg'
 
 export default function Hero(){
     return(

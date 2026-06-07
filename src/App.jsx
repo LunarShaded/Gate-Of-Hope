@@ -1,13 +1,14 @@
 import './App.css'
 import Hero from './components/Hero.jsx'
 import Header from './components/Header.jsx'
-import { Head } from '@boxicons/react'
+import AboutHero from './components/AboutHero.jsx'
 function App() {
 
   return (
     <>
      <Header/>
      <Hero/>
+     <AboutHero/>
     </>
   )
 }
