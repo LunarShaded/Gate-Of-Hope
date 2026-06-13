@@ -1,31 +1,43 @@
-*{
+*,
+*::before,
+*::after{
     padding: 0;
     margin: 0;
-}
-
-body{
     box-sizing: border-box;
 }
 
+
 .aboutSection{
     padding-top:75px;
-    min-height: 75vh;
+    min-height: 125vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: rgb(255, 255, 255);
 }
 
-.aboutSection h1{
-    text-align: center;
-    font-size: 34px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title h2{
+    font-size: 46px;
+}
+
+.titleLine{
+    width: 120px;
+    height: 3px;
+    background: #4CAF50;
+    border-radius: 10px;
 }
 
 .heroContent{
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 70px;
     padding-top: 75px;
 }
 
@@ -38,7 +50,8 @@ body{
 
 .heroStory h3{
     font-size: 28px;
-    font-weight: 500;
+    color: green;
+    font-weight: 600;
 }
 
 .heroStory ul{
@@ -51,22 +64,30 @@ body{
 .heroStory ul li p{
     font-size: 20px;
     font-weight: 400;
+    color: rgba(0, 0, 0, 0.686);
+    
 }
 
 .heroGoals{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: white;
+    align-self: flex-start;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.196);
+    border-radius: 8px;
+    padding: 24px;
 }
 
 .heroGoals h3{
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .heroGoals p{
     font-size: 20px;
     font-weight: 400;
+    color: rgba(0, 0, 0, 0.686);
 }
 
 .heroVisionWrapper{
@@ -97,4 +118,125 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.heroCard{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.cardWrapper{
+    background: white;
+    align-self: flex-start;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.196);
+    border-radius: 8px;
+    padding: 24px 120px 52px 120px;
+}
+
+.cardIcon{
+    color: green;
+    width: 42px;
+    height: 46px;
+}
+
+.cardWrapper p{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.686);
+    font-size: 22px;
+}
+
+
+@media (max-width: 1024px){
+
+    .heroContent{
+        gap: 40px;
+        padding: 60px 30px 0;
+    }
+
+    .heroStory{
+        max-width: 100%;
+    }
+
+    .cardWrapper{
+        padding: 24px 60px;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .aboutSection{
+        padding: 75px 20px 50px;
+    }
+
+    .heroContent{
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .heroStory{
+        width: 100%;
+    }
+
+    .heroStory h3,
+    .heroGoals h3{
+        font-size: 24px;
+    }
+
+    .heroStory ul li p,
+    .heroGoals p{
+        font-size: 18px;
+    }
+
+    .heroGoals{
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .heroCard{
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    .cardWrapper{
+        width: 100%;
+        padding: 24px;
+    }
+
+    .cardWrapper p{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .heroStory h3,
+    .heroGoals h3{
+        font-size: 22px;
+    }
+
+    .heroStory ul li p,
+    .heroGoals p,
+    .cardWrapper p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .heroVisionWrapper,
+    .heroMissionWrapper{
+        align-items: flex-start;
+    }
+
+    .iconGoals{
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+    }
+
+    .cardWrapper{
+        padding: 20px;
+    }
 }
