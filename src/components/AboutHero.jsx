@@ -1,12 +1,16 @@
 import styles from './AboutHero.module.css'
 import { EyeAlt } from '@boxicons/react';
 import { Rocket } from '@boxicons/react';
+import { DonateHeart } from '@boxicons/react';
 
 export default function AboutHero(){
     return(
         <>
          <section className={styles.aboutSection}>
-            <h1>About Us</h1>
+             <div className={styles.title}>
+                  <h2>About Us</h2>
+                  <div className={styles.titleLine}></div>
+             </div>
             <div className={styles.heroContent}>
               <div className={styles.heroStory}>
                 <h3>About Gate of Hope</h3>
@@ -52,6 +56,16 @@ export default function AboutHero(){
                    </div>
 
                 </div>
+              </div>
+            </div>
+
+            <div className={styles.heroCard}>
+              <div className={styles.cardWrapper}>
+                <DonateHeart className={styles.cardIcon}/>
+                 <p>Founded with the support of Polish missionaries and donors, Gate of Hope School has become a place<br/>
+                    where children in Uganda can access quality education, develop their talents,<br/>
+                    and build a brighter future. Through the dedication of local educators, volunteers,<br/>
+                    and international partners, the school continues to provide hope and opportunity to the community.</p>
               </div>
             </div>
          </section>
