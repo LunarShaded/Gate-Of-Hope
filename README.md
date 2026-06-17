@@ -1,16 +1,65 @@
-# React + Vite
+# Gate of Hope School Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern responsive website for Gate of Hope School built with React and CSS Modules.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive layout for all devices
+- Smooth scrolling navigation
+- Hero section with call-to-action
+- News section with cards grid
+- Contact form with embedded map
+- Custom footer with navigation and contacts
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- CSS Modules
+- HTML5 / CSS3
 
-## Expanding the ESLint configuration
+## Sections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Home
+- About
+- News
+- Contact
+
+## Purpose
+
+This project was created as a practice website for improving frontend development skills and building a clean UI for an educational institution.
+
+## Preview
+
+<img width="1898" height="903" alt="image" src="https://github.com/user-attachments/assets/e5f98e53-0cce-45d9-9155-7ecacc1927c8" />
+
+## Installing
+
+### 1. Clone the repository.
+
+### 2. Install dependencies
+
+```bash 
+
+npm install
+
+```
+
+### 3. Start development server
+
+```bash
+
+npm run dev
+
+```
+
+### OR
+
+```bash
+
+npm run build
+
+```
+
+### for production
+
+
