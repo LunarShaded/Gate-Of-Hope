@@ -4,7 +4,7 @@ import img from '/src/img/gateofhope.jpg'
 export default function Hero(){
     return(
         <>
-          <section className={styles.heroSection}>
+          <section className={styles.heroSection} id='home'>
             <div className={styles.heroContent}>
               <h2>Opening the Gate to a Brighter Future</h2>
               <p>At Gate of Hope School, we believe every child deserves access to quality education,<br/>

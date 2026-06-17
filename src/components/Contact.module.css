@@ -58,7 +58,7 @@
 }
 
 .textArea{
-    max-width: auto;
+    width: 100%;
     min-height: 120px;
     max-height: 170px;
     border-radius: 6px;
@@ -89,4 +89,84 @@
     height: 450px;
     border: none;
     border-radius: 6px;
+}
+
+@media (max-width: 1200px){
+    .contactBox{
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .map{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 992px){
+    .contactBox{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .contactForm{
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .map{
+        width: 100%;
+        max-width: 700px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .contactSection{
+        padding-top: 50px;
+    }
+
+    .topSection{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contactForm{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .map{
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px){
+    .contactBox{
+        padding: 0 15px;
+    }
+
+    .contactForm{
+        padding: 15px;
+    }
+
+    .input{
+        font-size: 16px;
+    }
+
+    .textArea{
+        min-height: 100px;
+    }
+
+    .btn{
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .map{
+        height: 280px;
+    }
 }

@@ -6,7 +6,7 @@ import { DonateHeart } from '@boxicons/react';
 export default function AboutHero(){
     return(
         <>
-         <section className={styles.aboutSection}>
+         <section className={styles.aboutSection} id='about'>
              <div className={styles.title}>
                   <h2>About Us</h2>
                   <div className={styles.titleLine}></div>

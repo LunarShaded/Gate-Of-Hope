@@ -38,6 +38,9 @@
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     gap: 60px;
+    width: 100%;
+    max-width: 1800px;
+    padding: 0 20px;
 }
 
 .cardItem{
@@ -92,4 +95,66 @@
     color: rgba(255, 255, 255, 0.803);
     height: 32px;
     width: 30px;
+}
+
+@media (max-width: 1200px){
+    .gridBox{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .title{
+        margin-bottom: 70px;
+    }
+
+    .title h2{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .titleLine{
+        width: 220px;
+    }
+
+    .gridBox{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cardItem{
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 480px){
+    .newsSection{
+        padding-top: 50px;
+    }
+
+    .title h2{
+        font-size: 30px;
+    }
+
+    .cardItem{
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .cardItem h3{
+        font-size: 22px;
+    }
+
+    .titleIcon{
+        width: 26px;
+        height: 26px;
+    }
+
+    .icon{
+        width: 24px;
+        height: 24px;
+    }
 }
