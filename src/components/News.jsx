@@ -9,7 +9,7 @@ import { Computer } from '@boxicons/react';
 export default function News(){
     return(
         <>
-          <section className={styles.newsSection}>
+          <section className={styles.newsSection} id='news'>
 
             <div className={styles.title}>
                   <h2>News and Events</h2>
