@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    background: white;
+    min-height: 75vh;
+}
+
+.contactBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactForm{
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.175);
+    padding: 25px;
+}
+
+.topSection{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 25px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item label{
+    color: rgb(0, 0, 0);
+}
+
+.input{
+    border: 1px solid rgb(103, 194, 61);
+    border-radius: 6px;
+    padding: 7px 7px;
+    outline: none;
+    font-size: 17px;
+}
+
+.bottomSection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 35px;
+}
+
+.textArea{
+    max-width: auto;
+    min-height: 120px;
+    max-height: 170px;
+    border-radius: 6px;
+    border: 1px solid green;
+    outline: none;
+    padding: 15px;
+    resize: vertical;
+}
+
+.btn{
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    color: white;
+    background: rgb(80, 152, 47);
+    transition: 0.2s ease;
+}
+
+.btn:hover{
+    background: rgb(53, 101, 31);
+}
+
+.map{
+    width: 600px;
+    height: 450px;
+    border: none;
+    border-radius: 6px;
+}
